@@ -2,13 +2,13 @@
  
 int main() 
 { 
-      int i, limit, total = 0, x, counter = 0, time_quantum,j; 
+      int i, limit, total = 0, x, counter = 0, time_quantum,j; //variable decaration
       
 	  int wait_time = 0, turnaround_time = 0,pos,z,p[10],prio[10], a_time[10], b_time[10], temp[10],b; 
       
 	  float average_wait_time, average_turnaround_time;
       
-	  printf("\nEnter Total Number of Processes:"); 
+	  printf("\nEnter Total Number of Processes:"); //no of processes
       
 	  scanf("%d", &limit); 
       
@@ -28,7 +28,7 @@ int main()
 	   
       printf("\nEnter the Time Quantum:"); 
       scanf("%d", &time_quantum); 
-      printf("\nProcess ID\t\tBurst Time\t Turnaround Time\t Waiting Time\t Priority\n");
+      printf("\nProcess ID\t\tBurst Time\t Turnaround Time\t Waiting Time\t Priority\n");//display of value
       for(total = 0, i = 0; x != 0;) 
       { 
 
@@ -46,7 +46,7 @@ int main()
 	
 		prio[z]=prio[pos];
 	
-		prio[pos]=temp1;
+		prio[pos]=temp1; 
 		 
 			temp1=b_time[z];
 			b_time[z]=b_time[pos];
